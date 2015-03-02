@@ -18,23 +18,28 @@ first off, make sure to
 npm install
 ```
 
-To start hapi server:
+To build the source simply type :
+
+```
+gulp 
+```
+
+Or to lint/watch/reload for development :
+```
+gulp dev
+```
+
+Start the hapi server:
 ```
 npm start
 ```
 
-Navigate to localhost:3000 to see 'Hello World' in its very own div and open your dev console to witness the glory of 'successfully loaded bundle.js'
-
-To lint/build/watch, simply type:
-
-```
-gulp
-```
-( assuming you have gulp installed )
+Then, Navigate to localhost:3000 to see 'Hello World' in its very own div and open your dev console to witness the glory of 'successfully loaded bundle.js'
 
 ### Todo's
 
  - Include Testing libraries - karma/mocha,chai,sinon 
+ - REST Endpoint scaffolding/Hapi Plugins?
  - Additional transformations as a part of build e.g. : ES6/CSS/HBS/JSX ( even though they were kindof excluded by design ... we'll see - maybe I will create separate repo's or modules for each )
 
 ###License
