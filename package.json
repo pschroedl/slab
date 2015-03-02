@@ -1,0 +1,27 @@
+{
+  "name": "slate",
+  "version": "0.0.0",
+  "description": "Simple scaffold for JS projects - Hapi server, static analysis, automatic reloading",
+  "main": "src/server/index.js",
+  "scripts": {
+    "start": "nodemon src/server/index.js"
+  },
+  "author": "Peter F. Schroedl",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "~3.8.11",
+    "gulp-browserify": "~0.5.1",
+    "gulp-jscs": "^1.4.0",
+    "gulp-jshint": "^1.9.2",
+    "gulp-jslint": "^0.2.2",
+    "gulp-livereload": "^3.8.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-notify-growl": "^1.0.2",
+    "gulp-rename": "~1.2.0",
+    "gulp-util": "~3.0.4",
+    "gulp-watch": "~4.1.1",
+    "jshint-stylish": "^1.0.1",
+    "require-dir": "~0.1.0",
+    "hapi": "~8.2.0"
+  }
+}
