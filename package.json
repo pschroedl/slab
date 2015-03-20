@@ -1,7 +1,7 @@
 {
   "name": "slate",
-  "version": "0.0.0",
-  "description": "Simple scaffold for JS projects - Hapi server, static analysis, testing and automatic reloading",
+  "version": "0.1.0",
+  "description": "Foundation for JS projects - Hapi server, static analysis, testing and automatic reloading",
   "main": "src/server/index.js",
   "scripts": {
     "start": "nodemon src/server/index.js"
