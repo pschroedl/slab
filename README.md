@@ -1,5 +1,5 @@
 #slate
-## a devlopment template
+## a development template
 
 Just a simple setup to have a few handy dev features ready right out of the box.
 
@@ -10,10 +10,11 @@ I wanted to only include what I felt necessary to get a simple bit of javascript
 * [JSHint] and [JSCS] - static analysis that I've grown to love
 * [liveReload] - support for auto reloading via browser plugin
 * [Hapi] and [node.js] - a lovely nodejs based server, setup as a static fileserver
+* [Mocha]/[Chai] - Test Framework and Assertion library
 
 
-###useage
-first off, make sure to 
+###Useage
+First off, make sure to
 ```
 npm install
 ```
@@ -21,10 +22,10 @@ npm install
 To build the source simply type :
 
 ```
-gulp 
+gulp
 ```
 
-Or to lint/watch/reload for development :
+Or to lint, test, watch, and live reload for development :
 ```
 gulp dev
 ```
@@ -37,10 +38,9 @@ npm start
 Then, Navigate to localhost:3000 to see 'Hello World' in its very own div and open your dev console to witness the glory of 'successfully loaded bundle.js'
 
 ### Todo's
-
- - Include Testing libraries - karma/mocha,chai,sinon 
+ - Setup JSDOM, Sinon
  - REST Endpoint scaffolding/Hapi Plugins?
- - Additional transformations as a part of build e.g. : ES6/CSS/HBS/JSX ( even though they were kindof excluded by design ... we'll see - maybe I will create separate repo's or modules for each )
+ - Additional, optional transformations as a part of build e.g. : ES6/CSS/HBS/JSX ( even though they were kindof excluded by design ... we'll see - maybe I will create separate repo's or modules for each )
 
 ###License
 
@@ -55,3 +55,5 @@ MIT
 [node.js]:http://nodejs.org
 [jQuery]:http://jquery.com
 [Gulp]:http://gulpjs.com
+[Mocha]:http://mochajs.org
+[Chai]:/http://chaijs.com
