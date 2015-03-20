@@ -1,7 +1,7 @@
 {
   "name": "slate",
   "version": "0.0.0",
-  "description": "Simple scaffold for JS projects - Hapi server, static analysis, automatic reloading",
+  "description": "Simple scaffold for JS projects - Hapi server, static analysis, testing and automatic reloading",
   "main": "src/server/index.js",
   "scripts": {
     "start": "nodemon src/server/index.js"
@@ -10,8 +10,6 @@
   "license": "MIT",
   "devDependencies": {
     "chai": "^2.1.2",
-    "gulp": "~3.8.11",
-    "gulp-browserify": "~0.5.1",
     "gulp-jscs": "^1.4.0",
     "gulp-jshint": "^1.9.2",
     "gulp-jslint": "^0.2.2",
@@ -23,11 +21,23 @@
     "gulp-util": "~3.0.4",
     "gulp-watch": "~4.1.1",
     "hapi": "~8.2.0",
+    "jquery": "^2.1.3",
     "jsdom": "^4.0.3",
     "jshint-stylish": "^1.0.1",
     "mocha": "^2.2.1",
     "nodemon": "^1.3.7",
     "require-dir": "~0.1.0",
     "sinon": "^1.14.1"
+  },
+  "dependencies": {
+    "bower": "^1.3.12",
+    "gulp": "~3.8.11",
+    "gulp-browserify": "~0.5.1",
+    "debowerify": "^1.2.0"
+  },
+  "browserify": {
+    "transform": [
+      "debowerify"
+    ]
   }
 }

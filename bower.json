@@ -1,0 +1,7 @@
+{
+  "name": "slate",
+  "dependencies": {},
+  "devDependencies": {
+    "jquery": "~2.1.3"
+  }
+}
