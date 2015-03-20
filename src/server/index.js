@@ -1,3 +1,5 @@
+'use strict';
+
 var Hapi = require('hapi');
 var server = new Hapi.Server();
 server.connection({ host: 'localhost', port : 3000 });
@@ -14,3 +16,6 @@ server.route({
 });
 
 server.start();
+
+// export for testing
+module.exports = server;
