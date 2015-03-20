@@ -5,5 +5,5 @@ gulp.task('lint', function() {
     gulp.src(['src/client/*.js', 'src/server/*.js'])
         .pipe(jshint('.jshintrc'))
         .pipe(jshint.reporter('jshint-stylish'))
-        // .pipe(jshint.reporter('fail'));
+        .pipe(jshint.reporter('fail'));
 });

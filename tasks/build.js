@@ -3,7 +3,7 @@ var gulp = require('gulp');
 var rename = require('gulp-rename');
 var livereload = require('gulp-livereload');
 
-gulp.task('browserify', function() {
+gulp.task('build', function() {
   gulp.src(['src/client/'], {read: false})
     .pipe(browserify({
       debug: true
