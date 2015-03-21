@@ -8,10 +8,10 @@ gulp.task('build', function() {
     .pipe(browserify({
       debug: true
     }))
-    .on('prebundle', function(bundler) {
-      // expose modules like React externally for dev tools
-      //bundler.require('react');
-    })
+    // .on('prebundle', function(bundler) {
+    //   // expose modules like React externally for dev tools
+    //   bundler.require('react');
+    // })
     .pipe(rename('src.js'))
     .pipe(gulp.dest('public/js/'))
     // Reload browser via livereload plugin
