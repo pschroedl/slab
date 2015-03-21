@@ -1,4 +1,4 @@
-#slate
+#slab
 ## a development foundation
 
 * [Gulp] - Build automation in js
@@ -10,15 +10,19 @@
 * [Mocha] and [Chai] - Test Framework and Assertion library
 
 ###Structure
-- public/
-  - bower_components/
-  - js/  *destination for built src.js*
-  - index.html
-- src
-  - client/
-  - server/
-- spec/  *test definitions, same heirarchy as src/*
-- tasks/  *gulp tasks*
+|-- public/  
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+-- bower_components/  
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+-- js/  
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--  bundle.js  *built via gulp browserify*  
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-- index.html  
+|-- src  
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +-- client/  
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +-- server/  
+|-- spec/  
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +-- client/  
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; +-- server/  
+|-- tasks/
+
 
 
 ###Useage

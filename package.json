@@ -1,6 +1,6 @@
 {
   "name": "slate",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Foundation for JS projects - Hapi server, static analysis, testing and automatic reloading",
   "main": "src/server/index.js",
   "scripts": {
