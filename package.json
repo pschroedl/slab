@@ -4,7 +4,8 @@
   "description": "Foundation for JS projects - Hapi server, static analysis, testing and automatic reloading",
   "main": "src/server/index.js",
   "scripts": {
-    "start": "nodemon src/server/index.js"
+    "start": "nodemon src/server/index.js",
+    "postinstall": "gulp setup_hooks"
   },
   "author": "Peter F. Schroedl",
   "license": "MIT",
@@ -18,12 +19,14 @@
     "gulp-notify": "^2.2.0",
     "gulp-notify-growl": "^1.0.2",
     "gulp-rename": "~1.2.0",
+    "gulp-symlink": "^2.1.0",
     "gulp-util": "~3.0.4",
     "gulp-watch": "~4.1.1",
     "hapi": "~8.2.0",
     "jquery": "^2.1.3",
     "jsdom": "^4.0.3",
     "jshint-stylish": "^1.0.1",
+    "map-stream": "0.0.5",
     "mocha": "^2.2.1",
     "mocha-jsdom": "^0.2.1",
     "nodemon": "^1.3.7",
